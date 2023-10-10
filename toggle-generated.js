@@ -21,7 +21,7 @@ for (const reviewFileElement of reviewFileElements) {
 	/**
 	 * @type {HTMLInputElement|null}
 	 */
-	const checkbox = reviewFileElement.querySelector('input[type="checkbox"]').checked;
+	const checkbox = reviewFileElement.querySelector('input[type="checkbox"]');
 	if (checkbox && !checkbox.checked) {
 		checkbox.click();
 	}
