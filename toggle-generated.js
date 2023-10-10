@@ -17,7 +17,7 @@ for (const reviewFileElement of reviewFileElements) {
 	// use lower case to avoid case sensitivity for keywords
 	const html = reviewFileElement.innerHTML.toLowerCase();
 	let isGenerated = keywords.some(keyword => html.includes(keyword));
-	if (!isGenerated) return;
+	if (!isGenerated) continue;
 	/**
 	 * @type {HTMLInputElement|null}
 	 */
